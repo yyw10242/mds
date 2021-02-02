@@ -108,6 +108,46 @@ which allows me to build a list view **lazily**
 
 
 
+# Flutter
+
+## Introduction to widgets
+
+always the starting point is 
+
+```dart
+void main() => runApp
+```
+
+don't forget.
+
+
+
+## Basic Widgets
+
+### Text
+
+just some kind of text box.
+
+### Row, Column
+
+privides flexible layout which based web's flexbox layout model.
+
+### Stack
+
+like web's absolute positioning layout model.
+
+> use Positioned Widget to set relatively to the top, right, left , bottom
+
+### Container
+
+let us to create a rectanglar visual element. can be decorated with  BoxDecoration Widget. Which allows us adjust background, border, shadow.
+
+As this widget offer us **Rectangular** visual element, this can have margin, padding, and so on
+
+
+
+## Using Material Components
+
 
 
 ## todo
