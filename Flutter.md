@@ -104,14 +104,6 @@ which allows me to build a list view **lazily**
 
 ## main()'s method must be wrapped by runApp();
 
-![image-20210201173948744](D:\KULS\DailyMD\2102\referenceImage\210221\image-20210201173948744.png)
-
-
-
-# Flutter
-
-## Introduction to widgets
-
 always the starting point is 
 
 ```dart
@@ -147,6 +139,38 @@ As this widget offer us **Rectangular** visual element, this can have margin, pa
 
 
 ## Using Material Components
+
+### Scaffold
+
+#### Contains
+
+* appBar
+* body
+* and..so on. quite lot
+
+Anyway it is not just only appbar. it's more lika panel which have appBar
+
+<img src="referenceImage/Flutter/image-20210203101802694.png" alt="image-20210203101802694" style="zoom:%;" />
+
+### AppBar
+
+![image-20210203101831657](referenceImage/Flutter/image-20210203101831657.png)
+
+bottom: generally used for TabBar. which is not goal of mine so move on.
+
+### DefaultTabController
+
+which needs **3** widgets
+
+* DefaultTabController
+* TabBar
+  locates AppBar's bottom
+* TabBarView
+  locates DefaultTabController's body
+
+
+
+
 
 
 
