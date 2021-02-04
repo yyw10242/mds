@@ -170,6 +170,38 @@ which needs **3** widgets
 
 
 
+### Stateless Widget and Stateful Widget.
+
+#### Stateless Widget
+
+immutable. so once setted it can't be change.
+
+#### Stateful widget
+
+can have mutable variables. and 
+
+
+
+### Main, Cross Axis Alignment
+
+`mainAxisAlignment` and `crossAxisAlignment` is the property of Column, Row Elements.
+
+main is main direction and cross is crossed direction
+
+
+
+## How this tutorial made spaces.
+
+### padding in Container Widget
+
+```dart
+ padding: const EdgeInsets.only(botton: 8),
+```
+
+
+
+
+
 
 
 
