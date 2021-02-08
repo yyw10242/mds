@@ -200,16 +200,110 @@ main is main direction and cross is crossed direction
 
 
 
+## Animate a widget across screens
+
+### Hero
+
+which privides same image transition.
+
+Each Screen widget need to have `Hero Widget with same tag`
+
+and then just `Navigator.push(context, MaterialPageRoute(builder:(_){return DetailScreen();}))`
 
 
 
+## Navigate to a new screen and back
+
+* Navigator.push
+* Navigator.pop
 
 
+
+## Pass arguments
+
+In this Example it was confusing because two suggestion was suggested.
+
+first is using `onGenerateRoute` event inside of MaterialApp.
+
+
+
+Both method needs same call method.
+
+```dart
+Navigator.pushNamed(
+                  context,
+                  targetScreen.routeName,
+                  arguments: argumentDataClass(
+                    'arg1',
+                    'arg2',
+                  ),
+                );
+```
+
+
+
+#### get Arguments with BuildContext
+
+* using MaterialApp's routes
+  * when target route comes then returns assigned widget.
+
+```dart
+/// inside of MaterialApp
+routes: {
+          ExtractArgumentsScreen.routeName: (context) =>
+              ExtractArgumentsScreen(),
+        });
+```
+
+
+
+#### get Arguments with onGenerateRoute event
+
+* using MaterialApp's onGenerateRoute
+  * When Route generates, **onGenerateRoute** event calls. 
+    So this event can get route name and using that parameter 
+    returns appropriate widget.
+  * We can handle routes didn't made by
+
+```dart
+assert(false, 'Need to implement ${settings.name}');
+```
+
+## How can we use this...
+
+Actually i don't know hoe to use this mehods.
+
+but if i can..
+
+i can make screen like this
+
+  if session available
+
+Splash - login page - main page
+
+​	     - main page
+
+
+
+## Return Data From screen
+
+using async await.
+
+we can get return value from other Screen
+
+and `Navigator.pop` have a result parameter to toss result value.
+
+so..
+
+>  Navigator.pop<T>(context, <T>value)
+
+to return value.
+
+### Scaffold's SnackBar Widget(?)
+
+Scaffold have a snackBar. Which is 
 
 ## todo
 
 https://flutter.dev/docs/get-started/learn-more
 
-## currently doing
-
-https://flutter.dev/docs/development/ui/widgets-intro
