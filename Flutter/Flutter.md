@@ -303,6 +303,20 @@ to return value.
 
 Scaffold have a snackBar. Which is 
 
+
+
+## Drawer
+
+> Is a sideBar.
+
+Think like... Yugioh's `draw!`
+
+then side bar slides to screen
+
+else... just press hamburger button.
+
+
+
 ## todo
 
 https://flutter.dev/docs/get-started/learn-more
