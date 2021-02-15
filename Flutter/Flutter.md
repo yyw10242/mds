@@ -317,6 +317,71 @@ else... just press hamburger button.
 
 
 
+## On Page transition
+
+When page transition...
+
+build context have a navigator value to Build other page route.
+
+There's two ways to Add navigator to build context.
+
+1. Add Widget that includes `MaterialApp` and Make other Widget to home to toss BuildContext.
+2. Wrap home property by BuildContext to make BuildContext.
+
+
+
+## Bloc Pattern
+
+Separates UI logics and Business Logics.
+
+### Bloc
+
+```dart
+class Bloc(
+    object _target = init(); // Create Target object to set UI
+    
+    ////////////////
+    StreamController<object> _objectSubject = StreamController<object>();
+    Stream<object> get _objectSubject.stream;
+    
+    change(){
+        //just change value and send message to subscripbed widgets
+        _target = "something";
+        _objectSubject = StreamController<object>();
+    }
+    dispose(){🟡🟡🟡//IMPORTANT//🟡🟡🟡
+       _objectSubject.close(); 
+    }
+)
+```
+
+
+
+### Call
+
+```dart
+
+```
+
+
+
+## Getter and Setter in dart
+
+Derives getter and setter looks like assign and function call;.
+
+```dart
+int _someVariable;
+int get someVariable => _someVariable;
+set someVariable(int value) = _someVariable = value;
+```
+
+
+
+https://www.youtube.com/watch?v=YEJPg2jwzI8  // 1 영상 링크
+배운 것 정리하기.
+
+
+
 ## todo
 
 https://flutter.dev/docs/get-started/learn-more
